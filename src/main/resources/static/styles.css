@@ -1,0 +1,206 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background to contrast with palette colors */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align elements to the top of the page */
+}
+
+/* Container styles for main content to ensure consistency */
+.container {
+    max-width: 1200px; /* Set the maximum width to 1200px */
+    width: 100%;
+    margin: 0 auto;
+    display: block; /* Ensure container is a block element */
+}
+
+/* Ensure every direct child of container is displayed vertically */
+.container > * {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Add space between elements */
+}
+
+/* Scrollable container for the table */
+.scrollable-container {
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Form container styles */
+form {
+    padding: 15px;
+    background-color: #ffffff; /* White background for forms */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    color: #5A18AC; /* Purple */
+    text-align: center; /* Center align headings */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #4FB8B0; /* Aqua border */
+    border-radius: 4px;
+}
+
+/* Textarea specific */
+textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #FD9E29; /* Orange */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #4FB8B0; /* Aqua on hover */
+}
+
+/* Logout button - fixed width */
+form[action="/logout"] {
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: center; /* Center content inside */
+}
+
+form[action="/logout"] input[type="submit"] {
+    max-width: 200px;
+    width: 100%;
+    background-color: #6BB45A; /* Green for logout button */
+    color: white;
+}
+
+form[action="/logout"] input[type="submit"]:hover {
+    background-color: #5A18AC; /* Purple on hover for contrast */
+}
+
+/* Register Entity Model button - fixed width */
+form.entity-model-form {
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: center; /* Center content inside */
+}
+
+form.entity-model-form input[type="submit"] {
+    max-width: 200px;
+    width: 100%;
+    background-color: #FD9E29; /* Orange */
+    color: white;
+}
+
+form.entity-model-form input[type="submit"]:hover {
+    background-color: #4FB8B0; /* Aqua on hover */
+}
+
+/* Links */
+a {
+    color: #5A18AC; /* Purple */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Divider styles */
+hr {
+    border: 0;
+    height: 1px;
+    background: #4FB8B0; /* Aqua */
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Form container styles with colored borders for differentiation */
+form.login-form {
+    border-left: 6px solid #FD9E29; /* Orange border for login form */
+    max-width: 400px; /* Set the maximum width to 1200px */
+    width: 100%;
+}
+
+form.entity-model-form {
+    border-left: 6px solid #6BB45A; /* Green border for entity model registration form */
+}
+
+/* Table styles - making it consistent with forms */
+table.entity-models-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff; /* White background like forms */
+    border-radius: 8px; /* Rounded corners to match forms */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow like forms */
+    overflow: hidden; /* Prevent table from overflowing at the corners */
+    margin-bottom: 20px; /* Spacing similar to forms */
+}
+
+/* Table header and cells */
+table.entity-models-table th,
+table.entity-models-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table.entity-models-table th {
+    background-color: #4FB8B0; /* Aqua header background to match color scheme */
+    color: white; /* White text in header for contrast */
+}
+
+table.entity-models-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for alternating rows */
+}
+
+table.entity-models-table tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover for better visual feedback */
+}
+
+/* Paragraph styles */
+p {
+    text-align: center; /* Center align paragraphs for consistency */
+}
+
+/* Drag-and-drop area styles */
+.drag-drop-area {
+    border: 2px dashed #4FB8B0; /* Aqua dashed border */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.drag-drop-area:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+/* File input field styling */
+input[type="file"] {
+    margin-bottom: 10px;
+}
