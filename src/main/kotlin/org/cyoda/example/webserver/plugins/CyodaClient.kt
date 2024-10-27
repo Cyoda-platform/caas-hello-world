@@ -3,13 +3,12 @@ package org.cyoda.example.webserver.plugins
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.ktor.server.application.Application
 import io.ktor.server.application.ApplicationStarted
-import io.ktor.server.application.ApplicationStarting
 import io.ktor.server.application.ApplicationStopped
 import io.ktor.server.application.ApplicationStopping
 import kotlinx.coroutines.runBlocking
-import org.cyoda.example.hello.CyodaCalculationMemberClient
 import org.cyoda.example.hello.integration.HttpClientSupplier
 import org.cyoda.example.hello.integration.TokenManager
+import org.cyoda.example.simple.integration.CyodaCalculationMemberClient
 import org.cyoda.example.webserver.conf.loadClientConnectionProperties
 import org.cyoda.example.webserver.conf.loadProcessors
 
